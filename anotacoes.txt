@@ -1,0 +1,16 @@
+LINGUAGENS
+----------
+javascript
+PHP (so para as requisicoes e conexao com banco)
+
+BIBLIOTECAS
+----------
+ANGULAR.JS
+bootstrap (CSS)
+font-awesome (ICONES)
+apexcharts (GRAFICOS) https://apexcharts.com/
+
+Conexao BD
+https://ajuda.locaweb.com.br/wiki/conectar-ao-ms-sql-server-atraves-do-php/
+
+
