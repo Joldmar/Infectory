@@ -170,13 +170,13 @@ app.controller('RelatorioCtrl', function ($scope, $rootScope, $location, MyLoadi
 
   if(usuario.cargo == 1){
     if($routeParams.tiporel != 'horas-trabalhadas' && $routeParams.tiporel != 'falhas'){
-      MyMessage.show('error', 'O seu usuário não tem acesso á esse relatório');
+      MyMessage.show('error', 'Seu usuário não tem acesso a esse relatório');
       return true;
     }
   }
   if(usuario.cargo == 2){
     if($routeParams.tiporel != 'horas-paradas' && $routeParams.tiporel != 'producao' && $routeParams.tiporel != 'dados-processo'){
-      MyMessage.show('error', 'O seu usuário não tem acesso á esse relatório');
+      MyMessage.show('error', 'Seu usuário não tem acesso a esse relatório');
       return true;
     }
   }
@@ -213,7 +213,7 @@ app.controller('RelatorioCtrl', function ($scope, $rootScope, $location, MyLoadi
           var series = [];
           var categories = [];
 
-          // ## Colcoar os dados no padrão necessário ao plugin de gráficos
+          // ## Colocar os dados no padrão necessário ao plugin de gráficos
           for(var i in response.data.relatorio){
             for(var j in response.data.relatorio[i]){
               series.push(parseFloat(response.data.relatorio[i][j].valor));
